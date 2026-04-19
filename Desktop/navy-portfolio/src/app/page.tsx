@@ -25,7 +25,7 @@ async function getLatestPosts(): Promise<Post[]> {
 }
 
 export default async function HomePage() {
-  const posts = await getLatestPosts();
+  const posts: Post[] = [];
 
   return (
     <>
